@@ -5,9 +5,67 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#pdfviewer {
+  display: flex;
+  justify-content: flex-start; align-items: flex-start;
+}
+
+#pageContent {
+  width: 30%;
+  display: flex; flex-wrap: wrap;
+  justify-content: space-between; align-items: flex-start;
+  padding-right: 10%;
+}
+
+
+#pageContent {
+  display: flex; flex-wrap: wrap;
+}
+
+#pageContent p {
+  width: 100%;
+}
+
+a {
+  height: 40px;
+  color: #333;
+  width: 48%;
+  background: #fff;
+  text-decoration: none;
+  display: flex; justify-content: center; align-items: center;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.annotationLayer {
+  display: none !important;
+}
+
+#root {
+  padding: 7%;
+  background: #e4e8e8;
+}
+
+.previewContainer {
+  display: flex;
+  flex-direction: row; flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 2px solid #fff;
+  padding-top: 20px;
+}
+
+.previewContainer img {
+  height: auto; width: 48%;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,.07);
 }
